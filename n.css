@@ -1,0 +1,238 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    color: #333;
+}
+
+/* Full Page */
+.FullPage {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f8f8f8;
+}
+
+/* Header */
+header {
+    padding: 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .Logo_text {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header .PageLinks > div {
+    margin: 0 15px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+header .PageLinks > div:hover {
+    text-decoration: underline;
+}
+
+.Divider_Header {
+    height: 1px;
+    width: 100%;
+    background-color: #ddd;
+    margin-top: 10px;
+}
+
+/* Landing Page */
+.LandingPage {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #fef8f3;
+}
+
+.LandingPage .Heading {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.LandingPage .Heading-2 {
+    font-size: 32px;
+    color: #a05c2f;
+}
+
+.LandingPage img {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+/* Projects Section */
+.NineProject {
+    padding: 40px 20px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.NineProject .Row1,
+.NineProject .Row2,
+.NineProject .Row3 {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.NineProject .Project1, .NineProject .Project2, .NineProject .Project3,
+.NineProject .Project4, .NineProject .Project5, .NineProject .Project6,
+.NineProject .Project7, .NineProject .Project8, .NineProject .Project9 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #f9f9f9;
+}
+
+.NineProject .Text {
+    padding: 10px;
+}
+
+.NineProject .Project_No {
+    font-weight: bold;
+}
+
+.NineProject .Type {
+    font-size: 14px;
+    color: #555;
+}
+
+.NineProject img {
+    width: 100%;
+    max-height: 150px;
+    object-fit: cover;
+}
+
+/* Text Paragraph Section */
+.TextPara {
+    background-color: #fef8f3;
+    padding: 40px 20px;
+}
+
+.TextPara .Para-Space_Right {
+    font-size: 16px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Tagline Section */
+.Tagline {
+    background-color: #f1f4f8;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.Tagline .Tagline_Text {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.Tagline .divider {
+    height: 2px;
+    width: 100px;
+    background-color: #333;
+    margin: 0 auto 20px;
+}
+
+.Tagline .Image_div img {
+    max-width: 300px;
+    width: 100%;
+}
+
+/* About Section */
+.About {
+    padding: 40px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.About .About_Text {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 16px;
+    color: #555;
+}
+
+/* Details Section */
+.Details {
+    padding: 40px 20px;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+.Details .Text {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.Details .Detail_text {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .page_links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+footer .page_links .Text_link,
+footer .page_links .Text_button {
+    cursor: pointer;
+    font-size: 14px;
+}
+
+footer .page_links .Text_button:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header .PageLinks {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .NineProject .Row1, .NineProject .Row2, .NineProject .Row3 {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .Tagline .Image_div img {
+        max-width: 200px;
+    }
+}
