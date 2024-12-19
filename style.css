@@ -1,12 +1,14 @@
-
-
 body {
     background-color: #e2f1dc;
     color: #333;
     line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    font-family:'Times New Roman', Times, serif;
 }
 
-/* Full Page Wrapper */
+
 .FullPage {
     width: 100%;
     margin: 0 auto;
@@ -16,29 +18,27 @@ body {
     background-color: #e3e9d6;
 }
 
-/* Header */
+
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px;
+    padding: 10px 20px;
     flex-wrap: wrap;
-    border-bottom: 0.5px solid gray;
+    border-bottom: 1px solid gray;
 }
 
 header .Logo .Logo_text {
-    font-size: 2.63rem;
+    font-size: 2rem;
     font-weight: 800;
-    font-style: ;
-    line-height: 2.63rem;
     color: #1D221B;
 }
 
 header .PageLinks {
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
     margin-left: auto;
-
+    flex-wrap: wrap;
 }
 
 header .PageLinks div {
@@ -50,29 +50,29 @@ header .PageLinks div {
 header .PageLinks div:hover {
     color: #555;
     text-decoration: underline;
-    font-size: 1.01rem;
 }
+
 
 .container {
-    flex:1;
+    flex: 1;
 }
 
-/* Hero Section */
+
 .LandingPage {
     text-align: center;
-    margin: 50px 0;
+    margin: 20px 0;
+    padding: 0 20px;
 }
 
 .LandingPage .Heading {
-    font-size: 4.5rem;
+    font-size: 2.5rem;
     font-weight: bold;
 }
 
 .LandingPage .Heading-2 {
-    font-size: 4.5rem;
+    font-size: 2.5rem;
     font-weight: bold;
     margin-bottom: 20px;
-    line-height: 0.3;
 }
 
 .LandingPage img {
@@ -82,135 +82,76 @@ header .PageLinks div:hover {
     border-radius: 10px;
 }
 
-/* Projects Grid */
+]
 .NineProject {
-    /* display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding: 20px; */
     display: grid;
-    /* grid-template-columns:repeat(auto-fit,minmax(250px,1fr)) ; */
-    /* grid-template-columns:repeat(3 ,1fr); */
-    gap:20px;
-    padding: 20px;
-}
-
-.NineProject .Row1,
-.NineProject .Row2,
-.NineProject .Row3 {
-    display: flex;
-    justify-content: space-between;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 10px;
-    margin-bottom: 20px;
+    padding: 10px;
 }
 
-.NineProject .Row1 > div,
-.NineProject .Row2 > div,
-.NineProject .Row3 > div {
-    flex: 1;
-    background:#e3e9d6;
-    /* border: 1px solid #ddd; */
-    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
-    text-align: left;
+.NineProject > div {
+    background: #e3e9d6;
     border-radius: 5px;
     padding: 10px;
+    text-align: left;
 }
 
 .NineProject img {
     max-width: 100%;
-    max-height: 200px;
-    object-fit: contain;
+    height: auto;
     border-radius: 10px;
+    display: block;
 }
 
-@media (max-width: 1200px) {
-    .NineProject img {
-      grid-template-columns: repeat(2, 1fr); 
-    }
-  }
-  
 
-  @media (max-width: 768px) {
-    .NineProject img {
-      grid-template-columns: 1fr; 
-    }
-  }
-
-.NineProject .Text .Project_No {
-    font-weight: bold;
-    font-size: 1.1rem;
-}
-
-.NineProject .Text .Type {
-    color: #777;
-    font-size: 0.9rem;
-}
-
-/* Paragraph Section */
 .TextPara {
     text-align: center;
-    padding: 40px 20px;
-    font-size: 1.2rem;
+    padding: 20px;
+    font-size: 1rem;
     color: #555;
 }
 
-/* Tagline Section */
+
 .Tagline {
     text-align: center;
-    margin: 40px 0;
-    background: linear-gradient(to bottom, #e3e9d6, #ebf6d1)
+    margin: 20px 0;
+    padding: 20px;
+    background: linear-gradient(to bottom, #e3e9d6, #ebf6d1);
 }
 
 .Tagline .Tagline_Text {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bold;
-    margin-bottom: 20px;
 }
 
 .Tagline .Image_div img {
-    max-width: 250px;
+    max-width: 150px;
     margin-top: 10px;
-    
 }
 
+
 .About {
-    padding: 40px 20px;
+    padding: 20px;
     text-align: center;
     background-color: #e3e9d6;
     color: #333;
 }
 
 .About .About_Text {
-    font-size: 1.1rem;
+    font-size: 1rem;
     line-height: 1.8;
     max-width: 700px;
     margin: 0 auto;
-    background-color: #e3e9d6;
 }
 
 
-.Details {
-    text-align: center;
-    margin: 30px 0;
-}
-
-.Details .Text {
-    font-weight: bold;
-    font-size: 1.3rem;
-}
-
-.Details .Detail_text {
-    margin-top: 10px;
-    font-size: 1rem;
-    color: #555;
-}
-
-/* Footer */
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #e3e9d6;
+    color: grey;
     padding: 20px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     text-align: center;
@@ -222,15 +163,87 @@ footer .Text_link {
 
 footer .Text_button {
     cursor: pointer;
-    background-color: #555;
-    color: #fff;
+    background-color: #e3e9d6;
+    border: 1px solid grey;
+    color: grey;
     padding: 8px 12px;
-    border-radius: 4px;
+    border-radius: 115px;
     font-size: 0.9rem;
 }
 
 footer .Text_button:hover {
-    background-color: #777;
+    background-color: #555;
+}
+
+.Details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+}
+
+.Details .Text {
+    text-align: left;
+    flex: 1;
+}
+
+.Details .Detail_text {
+    text-align: right;
+    flex: 1;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer .Text_link {
+    text-align: left;
+    flex: 1;
+}
+
+footer .Text_button {
+    text-align: right;
+    flex: 1;
 }
 
 
+@media (max-width: 1200px) {
+    header {
+        padding: 10px;
+    }
+    header .Logo .Logo_text {
+        font-size: 1.8rem;
+    }
+
+    .LandingPage .Heading, .LandingPage .Heading-2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header .PageLinks {
+        justify-content: center;
+        gap: 0.5rem;
+    }
+
+    .LandingPage .Heading, .LandingPage .Heading-2 {
+        font-size: 1.8rem;
+    }
+
+    .Tagline .Tagline_Text {
+        font-size: 1.2rem;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
