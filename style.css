@@ -1,10 +1,236 @@
-h1{
-    background-color: peachpuff;
-    color:rebeccapurple;
 
-
-    }
 
 body {
-    background-color: aqua;
+    background-color: #e2f1dc;
+    color: #333;
+    line-height: 1.5;
 }
+
+/* Full Page Wrapper */
+.FullPage {
+    width: 100%;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #e3e9d6;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    flex-wrap: wrap;
+    border-bottom: 0.5px solid gray;
+}
+
+header .Logo .Logo_text {
+    font-size: 2.63rem;
+    font-weight: 800;
+    font-style: ;
+    line-height: 2.63rem;
+    color: #1D221B;
+}
+
+header .PageLinks {
+    display: flex;
+    gap: 2rem;
+    margin-left: auto;
+
+}
+
+header .PageLinks div {
+    cursor: pointer;
+    font-size: 1rem;
+    color: #333;
+}
+
+header .PageLinks div:hover {
+    color: #555;
+    text-decoration: underline;
+    font-size: 1.01rem;
+}
+
+.container {
+    flex:1;
+}
+
+/* Hero Section */
+.LandingPage {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.LandingPage .Heading {
+    font-size: 4.5rem;
+    font-weight: bold;
+}
+
+.LandingPage .Heading-2 {
+    font-size: 4.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    line-height: 0.3;
+}
+
+.LandingPage img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+/* Projects Grid */
+.NineProject {
+    /* display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px; */
+    display: grid;
+    /* grid-template-columns:repeat(auto-fit,minmax(250px,1fr)) ; */
+    /* grid-template-columns:repeat(3 ,1fr); */
+    gap:20px;
+    padding: 20px;
+}
+
+.NineProject .Row1,
+.NineProject .Row2,
+.NineProject .Row3 {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.NineProject .Row1 > div,
+.NineProject .Row2 > div,
+.NineProject .Row3 > div {
+    flex: 1;
+    background:#e3e9d6;
+    /* border: 1px solid #ddd; */
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+    text-align: left;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.NineProject img {
+    max-width: 100%;
+    max-height: 200px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+@media (max-width: 1200px) {
+    .NineProject img {
+      grid-template-columns: repeat(2, 1fr); 
+    }
+  }
+  
+
+  @media (max-width: 768px) {
+    .NineProject img {
+      grid-template-columns: 1fr; 
+    }
+  }
+
+.NineProject .Text .Project_No {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.NineProject .Text .Type {
+    color: #777;
+    font-size: 0.9rem;
+}
+
+/* Paragraph Section */
+.TextPara {
+    text-align: center;
+    padding: 40px 20px;
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Tagline Section */
+.Tagline {
+    text-align: center;
+    margin: 40px 0;
+    background: linear-gradient(to bottom, #e3e9d6, #ebf6d1)
+}
+
+.Tagline .Tagline_Text {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.Tagline .Image_div img {
+    max-width: 250px;
+    margin-top: 10px;
+    
+}
+
+.About {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #e3e9d6;
+    color: #333;
+}
+
+.About .About_Text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: #e3e9d6;
+}
+
+
+.Details {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.Details .Text {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.Details .Detail_text {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+footer .Text_link {
+    font-size: 0.9rem;
+}
+
+footer .Text_button {
+    cursor: pointer;
+    background-color: #555;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+footer .Text_button:hover {
+    background-color: #777;
+}
+
+
